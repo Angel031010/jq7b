@@ -27,7 +27,9 @@ class DogScreen extends StatelessWidget {
         future: getDog(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Center(child: Image.network(snapshot.data?.message ?? "Sin resultados"));
+            return Center(
+                child:
+                    Image.network(snapshot.data?.message ?? "Sin resultados"));
           } else if (snapshot.hasError) {
             return Center(child: Text('${snapshot.error}'));
           } else {

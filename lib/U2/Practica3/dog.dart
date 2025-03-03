@@ -12,14 +12,14 @@ class Dog {
   }
 }
 
-class Coctail {
+class Cocktail {
   String strDrink;
   String strDrinkThumb;
 
-  Coctail({required this.strDrink, required this.strDrinkThumb});
+  Cocktail({required this.strDrink, required this.strDrinkThumb});
 
-  factory Coctail.fromJson(Map<String, dynamic> json) {
-    return Coctail(
+  factory Cocktail.fromJson(Map<String, dynamic> json) {
+    return Cocktail(
       strDrink: json['strDrink'],
       strDrinkThumb: json['strDrinkThumb'],
     );
